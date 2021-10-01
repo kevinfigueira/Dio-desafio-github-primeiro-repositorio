@@ -443,8 +443,29 @@ Em outras palavras, Git é essencial para projetos realizados em equipe, tornand
 <br>
 
 ## Objetos internos do Git
+<<<<<<< HEAD
+=======
 
 <br>
+
+### Objetos do Git
+>>>>>>> 06e83d458a2bd04396c67ece0d0e5f7bd0f69f98
+
+> O Git é um sistema de arquivos de conteúdo endereçável. Ótimo. O que isso significa? Isso significa que o coração do Git é um simples armazenamento chave-valor. Você pode inserir qualquer tipo de conteúdo nele, e ele lhe dará de volta uma chave que você pode usar para recuperar o conteúdo de volta em qualquer momento. Para demonstrar isso, você pode usar o comando de encanamento hash-object, que recebe alguns dados, armazena eles em seu diretório .git, e lhe devolve de volta a chave com o qual os dados são armazenados. Primeiramente, inicialize um novo repositório Git e verifique que não há nada no diretório objects:
+
+`$ git init test` <br/>
+`Initialized empty Git repository in /tmp/test/.git/`<br/>
+`$ cd test`<br/>
+`$ find .git/objects`<br/>
+`.git/objects`<br/>
+`.git/objects/info`<br/>
+`.git/objects/pack`<br/>
+`$ find .git/objects -type f`<br/>
+
+> O Git inicializou o diretório `objects` diretamente e criou os subdiretórios `pack` e `info` dentro dele, mas não há nenhum arquivo regular. Agora, guarde algum texto no seu banco de dados do Git:
+
+`$ echo 'test content' | git hash-object -w --stdin
+d670460b4b4aece5915caf5c68d12f560a9fe3e4`
 
 ### Objetos do Git
 
