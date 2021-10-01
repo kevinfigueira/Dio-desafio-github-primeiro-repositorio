@@ -442,13 +442,11 @@ Em outras palavras, Git é essencial para projetos realizados em equipe, tornand
 
 <br>
 
-## **Área em desenvolvimento**, sinta-se a vontade para contribuir 😉
-
-<br>
-
 ## Objetos internos do Git
 
 <br>
+
+### Objetos do Git
 
 ## Ciclo de vida dos arquivos no Git
 
