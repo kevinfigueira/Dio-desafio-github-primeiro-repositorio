@@ -24,7 +24,9 @@ A tag head contém elementos que serão lidos pelo navegador, como os metadados 
 
 E dentro da tag body colocamos todo o conteúdo visível ao usuário: textos, imagens, vídeos.
 
-<img align="center" src="Estrutura-basica-HTML.png" width="80" height="80"></img>
+####              Então ficará assim nossa Estrutura Básica do HTML
+
+<img src="img/Estrutura-basica-HTML.png">
 
 ## Prática
 Como exercício para esse curso iremos construir um site pessoal, e precisamos começar com a estrutura básica que acabamos de ver.
@@ -37,6 +39,8 @@ E por último escreveremos nosso nome dentro do elemento body apenas para enxerg
 
 ## Semântica
 Durante muitos anos o elemento padrão no HTML era a div, construíamos nosso conteúdo todo baseado nela, e assim nascia a sopa de divs.
+
+<img src="img/tags-divs.png">
 
 Mas em 2014 saiu a quinta versão do HTML, e com ela vieram vários mudanças importantes, como performance e acessibilidade, mas nesse curso introdutório vamos focar na semântica.
 
@@ -66,6 +70,10 @@ Esse elemento representa o rodapé do conteúdo ou de parte dele, pois ele é ac
 
 Eles não foram criados na versão 5 do HTML e nem são específicos para semântica, mas servem para esse propósito. São utilizados para marcar a importância dos títulos, sendo `<h1>` o mais importante e `<h6>` o menos. Uma dica: use apenas um `<h1>` por página, pois ele representa o objetivo da sua página.
 
+
+
+<img src="img/semantica.png">
+
 ## Prática
 Dando continuidade ao nosso site iremos montar sua estrutura. Pensei em adicionarmos um cabeçalho com nosso nome, uma lista de posts (como um blog) e um rodapé para nossos contatos.
 
@@ -82,9 +90,13 @@ Não se preocupe com o layout e com conteúdo da página, nós vamos tratar isso
 ## Textos e links
 A criação do HTML foi motivada pela necessidade de compartilhar textos e documentos, e mesmo depois de quase 30 anos, com toda a evolução da web, isso ainda representa uma boa parte do conteúdo da web.
 
-Já falamos anteriormente sobre os elementos h1-h6 e, eles são essenciais para nos indicar visualmente a importância e localização de seções de texto na página, mas para textos maiores e mais densos usamos o elemento p.
+Já falamos anteriormente sobre os elementos `h1-h6` e, eles são essenciais para nos indicar visualmente a importância e localização de seções de texto na página, mas para textos maiores e mais densos usamos o elemento p.
 
 O `<p>` representa um parágrafo, mas ele não suporta apenas texto, podemos adicionar imagens, código, vídeos e vários outros tipos de conteúdo dentro dele.
+
+<img src="img/titulos-paragrafos.png">
+
+
 
 Um outro elemento interessante e extremamente necessário na web é o `<a>` - que significa anchor/âncora, ele representa um hyperlink, é ele que interliga vários conteúdos e páginas na web.
 
@@ -92,14 +104,20 @@ O elemento a tem vários atributos, mas vamos focar em dois, o href e o target.
 
 O href representa o hyperlink para onde sua âncora aponta, pode ser uma página do seu ou de outro site, um e-mail e até mesmo um telefone, os dois últimos precisam dos prefixos mailto: e tel:, respectivamente.
 
-O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor _blank.
+O target neste momento vai servir para nos ajudar a abrir nossos links em outra aba do navegador usando o valor `_blank`.
+
+
+
+<img src="img/links.png">
+
+
 
 ### Prática
 Vamos adicionar um texto fictício a nossa postagem: logo após o fechamento do `</header>` vamos adicionar um elemento p e inserir um texto que vamos retirar do site lipsum.com
 
 E em alguma parte deste texto vamos adicionar um hiperlink para outra página e um para nosso e-mail.
 
-Criarei um hyperlink para meu perfil no LinkedIn: adicione o hyperlink no atributo href e o valor _blank no atributo target, assim o link será aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: `<a href="mailto:lucas@vilaboim.com" target="_blank">lucas@vilaboim.com</a>`
+Criarei um hyperlink para meu perfil no LinkedIn: adicione o hyperlink no atributo href e o valor `_blank` no atributo target, assim o link será aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: `<a href="mailto:lucas@vilaboim.com" target="_blank">lucas@vilaboim.com</a>`
 
 ## Imagens
 A web também é feita de imagens e para representá-las temos o elemento `<img>`, ele é um daqueles elementos sem tag de fechamento.
@@ -109,6 +127,12 @@ O elemento img é bem simples, contendo apenas 2 atributos próprios, o src e o 
 O src é obrigatório e guarda o caminho para a imagem que você quer mostrar na página.
 
 O alt não é obrigatório mas é altamente recomendado por melhorar a acessibilidade, ele mostra a descrição da imagem caso ela não carregue e leitores de tela usam esse atributo para descrever a imagem para o usuário saber o que ela significa.
+
+
+
+<img src="img/imagem.png">
+
+
 
 ### Prática
 Vamos adicionar uma imagem ao cabeçalho da página e uma imagem a postagem.
@@ -128,7 +152,11 @@ O elemento ul cria uma lista não ordenada, onde a ordem dos elementos não é i
 
 O `<ol>` serve para criar lista ordenadas, nessas a ordem importa, portanto elas são representadas com números, algarismos romanos ou letras.
 
+<img src="img/lista-ordenada.png">  <img src="img/lista-ordenada-1.png">
+
 E o elemento li é um item dentro de uma dessas listas. Um `<li>` pode conter vários tipos de conteúdos, como parágrafos, imagens e até outras listas.
+
+<img src="img/lista-nao-ordenada.png">  <img src="img/lista-nao-ordenada-1.png">
 
 ### Prática
 Adicionaremos uma lista de contatos ao rodapé da nossa página, e para isso usaremos também o elemento a que vimos anteriormente.
